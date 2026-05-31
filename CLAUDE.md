@@ -2,6 +2,26 @@
 
 App web em Python que exibe a cotação histórica da PETR4 (Petrobras/B3) durante 2026 com gráfico interativo e projeção de preço alvo via regressão linear.
 
+## Repositório GitHub
+
+**URL:** https://github.com/agenciafirstdigital-jpg/petr4-analyzer-2026
+
+### Regras de sincronização
+
+- Toda alteração feita no projeto deve ser commitada e enviada ao repositório.
+- Ao modificar qualquer arquivo do projeto, atualizar também este `CLAUDE.md` se a mudança for relevante para a documentação.
+- O hook configurado em `.claude/settings.json` faz auto-push automático ao fim de cada sessão do Claude Code (evento `Stop`).
+- O script de auto-push está em `.claude/hooks/auto-push.ps1`.
+
+### Como fazer push manualmente (se necessário)
+
+```powershell
+Set-Location "C:\Users\Felipe\Downloads\Claudinho\Teste 1"
+git add app.py data.py analysis.py charts.py requirements.txt CLAUDE.md .gitignore
+git commit -m "descrição da alteração"
+git push origin main
+```
+
 ## Como rodar
 
 ```powershell
